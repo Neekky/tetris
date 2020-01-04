@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>俄罗斯方块</title>
+  <style>
+    #msg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.4);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+    #msg p {
+      border: 2px solid #eee;
+      padding: 15px;
+      background: #f20;
+      color: #fff;
+    }
+    #root {
+      justify-content: center;
+      margin: 0 auto;
+      display: flex;
+    }
+    #tip {
+      margin-left: 20px;
+      border: 1px solid;
+    }
+    #panel {
+      background: #000;
+      position: relative;
+    }
+    #next {
+      position: relative;
+      background: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    俄罗斯方块游戏
+    <div id="panel">
+      <div id="msg">
+        <p>游戏中</p>
+      </div>
+    </div>
+    <div id="tip">
+      <div id="next"></div>
+      积分
+      <div id="score"></div>
+      <div class="description">
+        <p>↑：向上</p>
+        <p>→：向右</p>
+        <p>↓：向下</p>
+        <p>←：向左</p>
+        <p>space：旋转方块</p>
+        <p>Enter：开始/继续/重新开始游戏</p>
+        <p>Backspace：暂停游戏</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
